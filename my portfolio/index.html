@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="text-container">
+                <h3 id="h3">Hello, </h3>
+                <h1 id="h1">I'm Saviour Ekpenyong</h1>
+                <p>A young and passionate web developer.</p>
+                <div class="button-container">
+                    <button onclick="location.href='#portfolio'">View Portfolio</button>
+                    <button onclick="location.href='#contact'">Hire Me</button>
+                </div>
+                <div class="social-media">
+                    <a href="https://twitter.com/" target="_blank">Twitter</a>
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="./assets/WhatsApp_Image_2024-10-30_at_15.14.18_073be54c-removebg (1).png" alt="Saviour Ekpenyong">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saviour Ekpenyong. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add any necessary JavaScript here
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.backgroundColor = '#007bff';
+                button.style.color = '#fff';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.backgroundColor = '';
+                button.style.color = '';
+            });
+        });
+    </script>
+</body>
+</html>
